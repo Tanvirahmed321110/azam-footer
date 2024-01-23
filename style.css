@@ -1,0 +1,144 @@
+/*-------  Global Style  Start  -------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contaienr{
+    max-width: 1288px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*-------  Global Style  End  -------- */
+
+
+
+
+/* ----------------   Footer Top Area Start   ----------------------- */
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-top{
+    background-color: #f2f2f2;
+    padding: 40px ;
+}
+.footer-top-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    row-gap: 40px;
+}
+.footer-top-item{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer-top-item .footer-top-item-head h3{
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer-top-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-top-item ul li a{
+    color: #616161;
+    font-size: 14px;
+}
+
+
+/*----- footer-subcribe -----*/
+.footer-subcribe{
+    grid-column: span 2
+}
+.footer-subcribe .subcibe-input-btn{
+    display: flex;
+    gap: 20px;
+}
+.footer-subcribe .subcibe-input-btn input,.footer-subcribe .subcibe-input-btn button{
+    outline: none;
+    border: none;
+    border: 1px solid #BABFC3 ;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #616161;
+}
+.footer-subcribe .subcibe-input-btn{
+    width: 100%;
+}
+.footer-subcribe .subcibe-input-wraper{
+    width: 70%;
+    max-width: 290px;
+}
+.footer-subcribe .subcibe-input-btn input{
+    padding: 8px 10px;
+    font-size: 14px;
+    width: 100%;
+}
+.footer-subcribe .subcibe-btn-wraper{
+    width: 30%;
+}
+.footer-subcribe .subcibe-input-btn button{
+    padding: 8px 14px;
+}
+/* ----------------   Footer Top Area End   ----------------------- */
+
+
+
+/* ----------------   Footer Bottom Area Start Here  -------------------*/
+.footer-bottom{
+    padding: 30px;
+    background-color: #ebeaea;
+}
+.footer-bottom ul {
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.footer-bottom ul li a{
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* ==================  Responsive in Footer  ===================  */
+
+@media(min-width:768px){
+    .footer-top-items{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+
+@media(min-width:991px){
+    
+    
+}
+@media(min-width:1024px){
+    .footer-top-items{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
